@@ -52,7 +52,7 @@ struct nvram_pair router_defaults[] = {
 	{ "lan_dhcpd_x", "0" },			/* DHCP server in AP mode */
 	{ "lan_ipaddr", DEF_LAN_ADDR },		/* LAN IP address */
 	{ "lan_netmask", DEF_LAN_MASK },	/* LAN netmask */
-	{ "lan_gateway", DEF_LAN_ADDR },	/* LAN gateway */
+	{ "lan_gateway", "192.168.2.1" },	/* LAN gateway */
 	{ "lan_dns_x", "1" },			/* LAN DNS [static|dhcp] */
 	{ "lan_dns1", "" },			/* LAN DNS1 */
 	{ "lan_dns2", "" },			/* LAN DNS2 */
@@ -165,7 +165,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_gmode", "2" },			/* A/N Mixed */
 #endif
 	{ "wl_mcs_mode", "0" },
-	{ "wl_channel", "0" },			/* Channel number */
+	{ "wl_channel", "36" },		/* Channel number */
 	{ "wl_bcn", "100" },			/* Beacon interval */
 	{ "wl_dtim", "1" },			/* DTIM period */
 	{ "wl_rts", "2347" },			/* RTS threshold */
@@ -272,7 +272,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_gmode", "5" },			/* g/n mixed */
 #endif
 	{ "rt_mcs_mode", "0" },
-	{ "rt_channel", "0" },
+	{ "rt_channel", "6" },
 	{ "rt_bcn", "100" },
 	{ "rt_dtim", "1" },
 	{ "rt_gmode_protection", "auto" },
@@ -583,7 +583,7 @@ struct nvram_pair router_defaults[] = {
 	/* DHCP server parameters */
 	{ "dhcp_start", DEF_LAN_DHCP_BEG },	/* First assignable DHCP address */
 	{ "dhcp_end", DEF_LAN_DHCP_END },	/* Last assignable DHCP address */
-	{ "dhcp_enable_x", "1" },
+	{ "dhcp_enable_x", "0" },
 	{ "dhcp_lease", "86400" },
 	{ "dhcp_gateway_x", "" },
 	{ "dhcp_dns1_x", "" },
@@ -691,7 +691,7 @@ struct nvram_pair router_defaults[] = {
 #if defined(BOARD_ROLE_REPEATER)
 	{ "sw_mode", "3" },
 #else
-	{ "sw_mode", "1" },
+	{ "sw_mode", "3" },
 #endif
 
 	{ "telnetd", "0" },
