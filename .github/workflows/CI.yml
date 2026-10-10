@@ -14,7 +14,7 @@ jobs:
       - name: Prepare environment
         run: |
           sudo apt-get update
-          sudo apt-get install -y libtool-bin gperf python3-docutils autopoint gettext fakeroot
+          sudo apt-get install -y unzip libtool-bin libtool libltdl-dev curl cmake gperf gawk flex bison xxd fakeroot cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp-dev libmpc-dev libmpfr-dev libncurses-dev wget libc-dev-bin
 
       - name: Prepare toolchain
         run: |
