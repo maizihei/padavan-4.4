@@ -48,7 +48,7 @@ struct nvram_pair router_defaults[] = {
 	{ "lan_hwaddr", "" },			/* LAN interface MAC address */
 
 	/* LAN TCP/IP parameters */
-	{ "lan_proto_x", "1" },			/* DHCP client [static|dhcp] in AP mode */
+	{ "lan_proto_x", "0" },			/* DHCP client [static|dhcp] in AP mode */
 	{ "lan_dhcpd_x", "0" },			/* DHCP server in AP mode */
 	{ "lan_ipaddr", DEF_LAN_ADDR },		/* LAN IP address */
 	{ "lan_netmask", DEF_LAN_MASK },	/* LAN netmask */
